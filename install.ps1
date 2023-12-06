@@ -14,6 +14,7 @@ $wingetDeps = @(
 	"MSYS2.MSYS2"
 	"Microsoft.PowerShell"
 	"Microsoft.WindowsTerminal"
+    "Microsoft.VCRedist.2015+.x64"
 	"Microsoft.VisualStudioCode"
 	"File-New-Project.EarTrumpet"
 	"Discord.Discord"
