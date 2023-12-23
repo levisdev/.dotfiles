@@ -1,12 +1,31 @@
 return {
-    "lewis6991/gitsigns.nvim",
-    event = { "BufReadPre", "BufNewFile" },
-    config = function()
-        require("gitsigns").setup({
-            current_line_blame = true,
-            current_line_blame_opts = {
-                delay = 100,
-            },
-        })
-    end,
+	"lewis6991/gitsigns.nvim",
+	init = function()
+		vim.api.nvim_create_autocmd({ "BufRead" }, {
+			group = vim.api.nvim_create_augroup("GitSignsLazyLoad", { clear = true }),
+			callback = function()
+				local lazy = require("lazy")
+				vim.fn.jobstart({ "git", "-C", vim.loop.cwd(), "rev-parse" }, {
+					on_exit = function(_, return_code)
+						if return_code == 0 then
+							vim.api.nvim_del_augroup_by_name("GitSignsLazyLoad")
+							vim.schedule(function()
+								lazy.load({ plugins = { "gitsigns.nvim" } })
+							end)
+						end
+					end,
+				})
+			end,
+		})
+	end,
+	opts = {
+		signs = {
+			delete = { text = "" },
+			topdelete = { text = "" },
+		},
+		current_line_blame = true,
+		current_line_blame_opts = {
+			delay = 100,
+		},
+	},
 }

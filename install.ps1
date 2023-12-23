@@ -15,6 +15,7 @@ $wingetDeps = @(
 	"Microsoft.PowerShell"
 	"Microsoft.WindowsTerminal"
     "Microsoft.VCRedist.2015+.x64"
+    "Microsoft.VCRedist.2015+.x86"
 	"Microsoft.VisualStudioCode"
 	"File-New-Project.EarTrumpet"
 	"Discord.Discord"
@@ -28,11 +29,6 @@ if (-not (Get-Command scoop -ErrorAction SilentlyContinue)) {
 }
 
 Write-Host "Setting up scoop..."
-scoop install git
-scoop bucket add extras
-scoop bucket add java
-scoop bucket add nerd-fonts
-scoop bucket add versions
 scoop import ./.config/scoop.json
 scoop update -a
 
@@ -46,7 +42,7 @@ Write-Host "Installing missing winget packages..."
 $installedWingetDeps = winget list | Out-String
 foreach ($wingetDep in $wingetDeps) {
     if ($installedWingetDeps -notmatch $wingetDep) {
-        winget install --id $wingetDep
+        winget install --id $wingetDep -e --accept-source-agreements --accept-package-agreements
     }
 }
 

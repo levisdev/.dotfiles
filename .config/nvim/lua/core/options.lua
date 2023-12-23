@@ -5,7 +5,6 @@ opt.fileencoding = "utf-8"
 
 opt.number = true
 opt.wrap = false
-opt.cursorline = true
 opt.laststatus = 3
 opt.showmode = false
 opt.signcolumn = "yes"
@@ -41,8 +40,12 @@ opt.pumheight = 10
 opt.autowrite = true
 opt.clipboard = "unnamedplus"
 opt.wildignore = { "*/node_modules/*" }
-opt.fillchars = {
-	eob = " ",
-}
+opt.fillchars = { eob = " " }
 opt.iskeyword:append("-")
 opt.shortmess:append("sI")
+opt.formatoptions:remove("ro")
+
+vim.cmd([[
+    cnoreabbrev W w
+    cnoreabbrev Q q
+]])

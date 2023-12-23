@@ -1,7 +1,5 @@
-require("user.options")
-require("user.keymaps")
-require("user.lazy")
+require("core.options")
+require("core.keymaps")
+require("core.lazy")
 
-vim.cmd("colorscheme onedark")
-
---
+vim.cmd("colorscheme catppuccin")
