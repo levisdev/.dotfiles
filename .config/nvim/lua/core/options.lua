@@ -43,7 +43,6 @@ opt.wildignore = { "*/node_modules/*" }
 opt.fillchars = { eob = " " }
 opt.iskeyword:append("-")
 opt.shortmess:append("sI")
-opt.formatoptions:remove("ro")
 
 vim.cmd([[
     cnoreabbrev W w
