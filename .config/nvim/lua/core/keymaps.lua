@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 
 function map(mode, lhs, rhs)
-	vim.keymap.set(mode, lhs, rhs, { silent = true })
+    vim.keymap.set(mode, lhs, rhs, { silent = true })
 end
 
 -- Disable default key map for man command

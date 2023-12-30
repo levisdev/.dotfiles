@@ -1,37 +1,37 @@
 return {
-	"nvim-lua/plenary.nvim",
-	"nvim-tree/nvim-web-devicons",
+    "nvim-lua/plenary.nvim",
+    "nvim-tree/nvim-web-devicons",
 
-	{ "jghauser/mkdir.nvim", event = "BufNewFile" },
+    { "jghauser/mkdir.nvim", event = "BufNewFile" },
 
-	{
-		"famiu/bufdelete.nvim",
-		keys = {
-			{ "<C-w>", ":Bd<Cr>", silent = true },
-		},
-	},
+    {
+        "famiu/bufdelete.nvim",
+        keys = {
+            { "<C-w>", ":Bd<Cr>", silent = true },
+        },
+    },
 
-	{
-		"numToStr/Comment.nvim",
-		keys = {
-			{ "gcc", mode = "n" },
-			{ "gcb", mode = "n" },
-			{ "gc", mode = "v" },
-			{ "gb", mode = "v" },
-		},
-		config = true,
-	},
+    {
+        "numToStr/Comment.nvim",
+        keys = {
+            { "gcc", mode = "n" },
+            { "gcb", mode = "n" },
+            { "gc", mode = "v" },
+            { "gb", mode = "v" },
+        },
+        config = true,
+    },
 
-	{
-		"chrisgrieser/nvim-puppeteer",
-		lazy = false,
-	},
+    {
+        "chrisgrieser/nvim-puppeteer",
+        lazy = false,
+    },
 
-	{
-		"ellisonleao/glow.nvim",
-		cmd = "Glow",
-		opts = {
-			border = "none",
-		},
-	},
+    {
+        "ellisonleao/glow.nvim",
+        cmd = "Glow",
+        opts = {
+            border = "none",
+        },
+    },
 }

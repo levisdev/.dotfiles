@@ -1,9 +1,9 @@
 return {
-	"catppuccin/nvim",
-	name = "catppuccin",
-	lazy = false,
-	priority = 1000,
-	opts = {
-		term_colors = true,
-	},
+    "catppuccin/nvim",
+    name = "catppuccin",
+    lazy = false,
+    priority = 1000,
+    opts = {
+        term_colors = true,
+    },
 }
