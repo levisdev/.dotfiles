@@ -3,6 +3,7 @@
 
 $symlinks = @{
 	"$HOME\.gitconfig" = ".gitconfig"                            
+	"$HOME\.wslconfig" = ".wslconfig"                            
 	"$HOME\AppData\Local\nvim" = ".config\nvim"                          
 	"$HOME\.config\starship.toml" = ".config\starship.toml"                 
 	"$HOME\.config\powershell" = ".config\powershell"                    
