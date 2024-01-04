@@ -18,9 +18,12 @@ return {
         local telescopeConfig = require("telescope.config")
         local vimgrep_arguments = { unpack(telescopeConfig.values.vimgrep_arguments) }
 
-        table.insert(vimgrep_arguments, "--hidden")
-        table.insert(vimgrep_arguments, "--glob")
-        table.insert(vimgrep_arguments, "!**/.git/*")
+        table.insert(vimgrep_arguments, {
+            "--trim",
+            "--hidden",
+            "--glob",
+            "!**/.git/*",
+        })
 
         return {
             defaults = {
