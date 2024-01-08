@@ -4,9 +4,6 @@ function map(mode, lhs, rhs)
     vim.keymap.set(mode, lhs, rhs, { silent = true })
 end
 
--- Disable default key map for man command
-map({ "n", "v" }, "<S-k>", "<Nop>")
-
 -- Select all
 map("n", "<C-a>", "gg<S-v>G")
 

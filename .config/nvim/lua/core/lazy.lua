@@ -58,6 +58,7 @@ require("lazy").setup("plugins", {
                 "bugreport",
                 "ftplugin",
                 "tohtml",
+                "man",
             },
         },
     },

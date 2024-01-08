@@ -67,7 +67,7 @@ return {
                 },
             },
             filters = {
-                custom = { "^.git$" },
+                custom = { "^.git$", "*.exe", "node_modules" },
             },
             git = {
                 enable = false,

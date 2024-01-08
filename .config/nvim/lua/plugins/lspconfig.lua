@@ -74,7 +74,6 @@ return {
                 "--header-insertion-decorators",
                 "--completion-style=detailed",
                 "--function-arg-placeholders",
-                "--fallback-style=microsoft",
                 "--offset-encoding=utf-16",
             },
         })
