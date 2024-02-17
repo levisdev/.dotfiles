@@ -9,7 +9,7 @@ opt.laststatus = 3
 opt.showmode = false
 opt.signcolumn = "yes"
 opt.termguicolors = true
-opt.guifont = "FiraCode Nerd Font:h16"
+opt.guifont = "FiraCode Nerd Font:h11"
 
 opt.ignorecase = true
 opt.smartcase = true

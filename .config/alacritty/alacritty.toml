@@ -1,5 +1,7 @@
+import = ["~/.config/alacritty/onedark.toml"]
+
 [font]
-size = 15.0
+size = 11.0
 
 [font.normal]
 family = "Hack Nerd Font"
@@ -17,25 +19,10 @@ style = "Italic"
 family = "Hack Nerd Font"
 style = "Bold Italic"
 
-# Colors (One Dark)
-[colors.primary]
-background = "#1f2329"
-foreground = "#a0a8b7"
-
-[colors.normal]
-black   = "#0e1013"
-red     = "#e55561"
-green   = "#8ebd6b"
-yellow  = "#e2b86b"
-blue    = "#4fa6ed"
-magenta = "#cc9057"
-cyan    = "#48b0bd"
-white   = "#abb2bf"
-
 [window.padding]
-x = 8
-y = 5
+x = 4
+y = 4
 
 [window.dimensions]
-columns = 90
-lines = 30
+columns = 80
+lines = 25

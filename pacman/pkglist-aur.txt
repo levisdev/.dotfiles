@@ -1,6 +1,0 @@
-auto-cpufreq
-compfy
-envycontrol
-themix-full-git
-thorium-browser-bin
-yay
