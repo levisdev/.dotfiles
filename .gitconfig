@@ -1,28 +1,39 @@
 [user]
-	email = khoa05032006@gmail.com
-	name = levisdev
+  email = khoa05032006@gmail.com
+  name = levisdev
 
 [init]
-	defaultBranch = main
+  defaultBranch = main
 
 [safe]
-    directory = *
+  directory = *
 
 [core]
-    pager = delta
+  pager = delta
 
 [interactive]
-    diffFilter = delta --color-only
-
-[delta]
-    navigate = true
-    light = false
+  diffFilter = delta --color-only
 
 [merge]
-    conflictstyle = diff3
+  conflictstyle = diff3
 
 [diff]
-    colorMoved = default
+  colorMoved = default
 
 [credential "helperselector"]
-	selected = manager
+  selected = manager
+
+[delta]
+  navigate = true
+  light = false
+  minus-style                   = syntax "#37222c"
+  minus-non-emph-style          = syntax "#37222c"
+  minus-emph-style              = syntax "#713137"
+  minus-empty-line-marker-style = syntax "#37222c"
+  line-numbers-minus-style      = "#b2555b"
+  plus-style                    = syntax "#20303b"
+  plus-non-emph-style           = syntax "#20303b"
+  plus-emph-style               = syntax "#2c5a66"
+  plus-empty-line-marker-style  = syntax "#20303b"
+  line-numbers-plus-style       = "#266d6a"
+  line-numbers-zero-style       = "#3b4261"

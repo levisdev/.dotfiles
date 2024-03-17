@@ -1,12 +1,12 @@
 add_newline = true
 
-palette = "onedark"
+palette = "tokyonight"
 
-[palettes.onedark]
-red = "#e55561"
-green = "#8ebd6b"
-blue = "#4fa6ed"
-yellow = "#e2b86b"
+[palettes.tokyonight]
+red = "#f7768e"
+green = "#9ece6a"
+blue = "#7aa2f7"
+yellow = "#e0af68"
 
 [character]
 success_symbol = "[❯](bold green)"
@@ -20,7 +20,7 @@ use_os_path_sep = false
 
 [git_branch]
 symbol = ""
-format = "[$symbol $branch](bold #30e248) "
+format = "[$symbol $branch](bold green) "
 
 [cmd_duration]
 min_time = 500
