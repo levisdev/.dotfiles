@@ -1,8 +1,2 @@
-vim.loader.enable()
-
-require("core.options")
-require("core.keymaps")
-require("core.autocmd")
-require("core.lazy")
-
-vim.cmd("colorscheme onedark")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
