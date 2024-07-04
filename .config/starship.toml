@@ -1,0 +1,28 @@
+palette = "tokyonight"
+add_newline = false
+
+[palettes.tokyonight]
+red = "#f7768e"
+green = "#9ece6a"
+yellow = "#e0af68"
+
+[username]
+disabled = true
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[✗](bold red)"
+
+[directory]
+truncation_length = 100
+truncation_symbol = ""
+truncate_to_repo = false
+use_os_path_sep = false
+
+[git_branch]
+symbol = ""
+format = "[$symbol $branch](bold green) "
+
+[cmd_duration]
+min_time = 500
+format = '\([$duration](bold yellow)\) '
