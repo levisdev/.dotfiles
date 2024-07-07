@@ -17,6 +17,7 @@ eval "$(zoxide init bash)"
 
 bind -x '"\C-n":nvim $(fzf)'
 
+export PATH=$PATH:~/.local/bin/:~/.cargo/bin/
 export EDITOR='nvim'
 export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
@@ -25,7 +26,6 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --ansi \
   --reverse \
   --no-scrollbar \
-  --border=rounded \
   --tabstop=2 \
   --preview '$HOME/scripts/fzf-preview.sh {}' \
   --color=bg+:#283457 \
