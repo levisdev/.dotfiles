@@ -12,14 +12,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-eval "$(starship init bash)"
-eval "$(zoxide init bash)"
-
-bind -x '"\C-n":nvim $(fzf)'
-
-export PATH=$PATH:~/.local/bin/:~/.cargo/bin/
 export EDITOR='nvim'
-export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
+export FZF_DEFAULT_COMMAND='fdfind --type f --strip-cwd-prefix --hidden --follow --exclude .git'
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --bind 'ctrl-d:preview-up' \
   --bind 'ctrl-f:preview-down' \
@@ -45,3 +39,9 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --color=separator:#ff9e64 \
   --color=spinner:#ff007c \
 "
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+eval "$(starship init bash)"
+eval "$(zoxide init bash)"
