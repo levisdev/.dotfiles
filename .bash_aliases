@@ -10,5 +10,5 @@ alias gs='git status'
 alias gl='git log'
 alias gc='git clone'
 alias gp='git push'
-
-alias l='yazi'
+alias ga='git add'
+alias gm='git commit -m'

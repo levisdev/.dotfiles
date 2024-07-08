@@ -57,7 +57,7 @@ return {
   {
     "CRAG666/code_runner.nvim",
     keys = {
-      { "<C-b>", "<Cmd>RunCode<Cr>", desc = "Code Runner" },
+      { "<leader>cb", "<Cmd>RunCode<Cr>", desc = "Code Runner" },
     },
     opts = {
       mode = "float",

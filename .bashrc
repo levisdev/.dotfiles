@@ -1,9 +1,12 @@
+if [ -d "$HOME/.local/bin" ]; then
+  PATH="$HOME/.local/bin:$PATH"
+fi
+
 source $HOME/.bash_aliases
 
 HISTSIZE=-1
 HISTFILESIZE=-1
 
-# enable bash completion in interactive shells
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
