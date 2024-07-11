@@ -36,7 +36,6 @@ require("lazy").setup({
   },
   lockfile = vim.fn.stdpath("data") .. "/lazy-lock.json",
   install = { colorscheme = { "tokyonight" } },
-  checker = { enabled = true }, -- automatically check for plugin updates
   change_detection = { notify = false },
   performance = {
     rtp = {
