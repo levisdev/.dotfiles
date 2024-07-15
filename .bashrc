@@ -16,7 +16,7 @@ if ! shopt -oq posix; then
 fi
 
 export EDITOR='nvim'
-export FZF_DEFAULT_COMMAND='fdfind --type f --strip-cwd-prefix --hidden --follow --exclude .git'
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --bind 'ctrl-d:preview-up' \
   --bind 'ctrl-f:preview-down' \
@@ -48,3 +48,4 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
+# eval "$(zellij setup --generate-auto-start bash)"
