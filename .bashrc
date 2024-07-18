@@ -48,4 +48,3 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
-# eval "$(zellij setup --generate-auto-start bash)"
